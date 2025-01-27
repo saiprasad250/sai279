@@ -1,0 +1,122 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "992f1151-3c6e-4213-a721-8c554cca0450",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def mean_value(*n):#*n indicates variable number \n",
+    "    sum = 0\n",
+    "    counter = 0\n",
+    "    for x in n:\n",
+    "        counter = counter + 1\n",
+    "        sum += x\n",
+    "        mean = sum / counter\n",
+    "        return mean"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "f803bed1-a8e1-4305-ae60-34e598b28b3a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def product(*n):\n",
+    "    result = 1\n",
+    "    for i in range(len(n)):\n",
+    "        result *= n[i]\n",
+    "    return result"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "e47c43e4-1fb8-4d93-85b9-4e7698b72a3b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "216"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "product(2,3,4,9)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "d7b3af50-0032-4f7b-80e7-549f083f7c2c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3628.0"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mean_value(3628,3873,2829)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a2edd191-ff7e-4b03-8c6b-8b09742f2b72",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3535a377-07e4-4635-89c3-1c14ba27101a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "901f710c-2d74-4c03-b97a-3d7df3b1a6ae",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
